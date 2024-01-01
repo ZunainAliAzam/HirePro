@@ -29,7 +29,9 @@ html {
 }
 
 body {
-    background-color: #eee !important;
+    background-color:#fff !important;
+    padding-top: 8rem;
+    position: absolute;
 }
 
 .header {
@@ -85,6 +87,43 @@ body {
 .btn.dev:hover{
     background:whitesmoke;
 }
+
+/* HERO SECTION */
+
+.hero-container{
+    display: inline-flex;
+    background-color: antiquewhite;
+}
+
+.hero-content{
+    margin: 60px 80px 40px 40px;
+}
+.hero-content h2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color:#141516
+}
+
+.hero-content h2 span{
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.hero-content p{
+    font-size: 14px;
+}
+
+.hero-banner{
+    display: inline-flex;
+
+}
+.hero-banner img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
 .container{
     font-family: 'Poppins', sans-serif;
 }
