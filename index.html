@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <nav class="header">
@@ -39,17 +43,22 @@
     <section class="hero">
       <div class="hero-container">
         <div class="hero-content">
-          <h2 class="content">Your Gateway To <span>Exceptional</span> Talent</h2>
+          <h2 class="content">
+            Your Gateway To <span>Exceptional</span> Talent
+          </h2>
           <p>
             Unleash the power of top-notch freelance talent. Elevate your
             projects with the excellence that defines us because exceptional is
             the only standard we know.
           </p>
           <div class="hero-btn">
-            <button class="hero-btn-one">Get Hired <span class="arrow">&#10148;</span></button>
-            <button class="hero-btn-two">Start Hiring <span class="arrow">&#10148;</span></button>
+            <button class="hero-btn-one">
+              Get Hired <span class="arrow">&#10148;</span>
+            </button>
+            <button class="hero-btn-two">
+              Start Hiring <span class="arrow">&#10148;</span>
+            </button>
           </div>
-          
         </div>
         <div class="hero-banner">
           <img src="./images/hero-banner.jpg" alt="hero-banner" />
@@ -60,12 +69,12 @@
     <section class="testimonials">
       <div class="container">
         <div class="section-header">
-          <h2 class="title">What Our Client Say</h2>
+          <h2 class="title">What Our Clients Say</h2>
         </div>
         <div class="testimonials-content">
-          <div class="testimonials-slider js-testimonials-slider">
-            <div>
-              <div class="testimonials-item">
+          <div class="swiper testimonials-slider js-testimonials-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide testimonials-item">
                 <div class="info">
                   <img src="./images/profile-1.jpg" alt="" />
                   <div class="text-box">
@@ -88,7 +97,7 @@
                 </div>
               </div>
 
-              <div class="testimonials-item">
+              <div class="swiper-slide testimonials-item">
                 <div class="info">
                   <img src="./images/profile-2.jpg" alt="" />
                   <div class="text-box">
@@ -107,11 +116,11 @@
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
                 </div>
               </div>
 
-              <div class="testimonials-item">
+              <div class="swiper-slide testimonials-item">
                 <div class="info">
                   <img src="./images/profile-3.jpg" alt="" />
                   <div class="text-box">
@@ -134,7 +143,7 @@
                 </div>
               </div>
 
-              <div class="testimonials-item">
+              <div class="swiper-slide testimonials-item">
                 <div class="info">
                   <img src="./images/profile-4.jpg" alt="" />
                   <div class="text-box">
@@ -153,11 +162,11 @@
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
                 </div>
               </div>
 
-              <div class="testimonials-item">
+              <div class="swiper-slide testimonials-item">
                 <div class="info">
                   <img src="./images/profile-5.jpg" alt="" />
                   <div class="text-box">
@@ -181,6 +190,8 @@
               </div>
             </div>
           </div>
+
+          <div class="swiper-pagination js-testimonials-pagination"></div>
         </div>
       </div>
     </section>
@@ -248,5 +259,24 @@ Type Here</textarea
         <img src="./images/x.png" alt="xcom" />
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const swiper = new Swiper('.js-testimonials-slider', {
+                grabCursor: true,
+                spaceBetween: 30,
+                pagination: {
+                    el: '.js-testimonials-pagination',
+                    clickable: true
+                },
+                breakpoints: {
+                    767: {
+                        slidesPerView: 2
+                    }
+                }
+            });
+        });
+    </script>
   </body>
 </html>

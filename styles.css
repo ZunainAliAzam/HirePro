@@ -10,7 +10,7 @@
     --light-gray: rgba(0, 0, 0, 0.1);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -102,7 +102,7 @@ body {
     align-items: center;
     box-sizing: border-box;
     /* box-shadow: var(--box-shadow); */
-    padding:10px 40px;
+    padding: 10px 40px;
     border-radius: 10px;
 }
 
@@ -134,39 +134,112 @@ body {
     border-radius: 20px;
 }
 
-.hero-btn{
+.hero-btn {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.hero-btn-one{
+.hero-btn-one {
     background-color: hsl(211, 100%, 35%);
     color: #fff;
     font-size: 12px;
     font-weight: 500;
     padding: 10px;
     border-radius: 5px;
-    margin-right:70px ;
+    margin-right: 70px;
     cursor: pointer;
 }
 
-.hero-btn-one:hover{
+.hero-btn-one:hover {
     background-color: hsl(211, 98%, 41%);
 }
-.hero-btn-two{
+
+.hero-btn-two {
     background-color: hsl(210, 11%, 15%);
     color: #fff;
     font-size: 12px;
     font-weight: 500;
     padding: 10px;
     border-radius: 5px;
-    margin-right:70px;
+    margin-right: 70px;
     cursor: pointer;
 }
-.hero-btn-two:hover{
+
+.hero-btn-two:hover {
     background-color: hsl(207, 10%, 21%);
 }
+
 .container {
+    background-color: #eee;
     font-family: 'Poppins', sans-serif;
+    max-width: 1170px;
+    margin: auto;
+    padding: 30px 60px;
+}
+.section-header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section-header .title{
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: hsl(207, 10%, 21%);
+    line-height: 1.2;
+}
+
+.testimonials-item{
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.testimonials-item .info{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.testimonials-item img{
+    border-radius: 50%;
+    max-width: 100px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.testimonials-item .name{
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: hsl(107,10%,21%);
+    line-height: 1.2;
+}
+.testimonials-item .job{
+    text-transform: capitalize;
+    color: hsl(207, 10%, 21%);
+    font-size: 14px;
+}
+
+.testimonials-item p{
+    font-size: 13px;
+    margin-top: 20px;
+    color: hsl(207, 10%, 21%);
+}
+
+.testimonials-item .rating{
+    margin-top: 15px;
+    font-size: 14px;
+    color: hsl(36,88%,60%);
+}
+
+.testimonials .swiper-pagination{
+    position: relative;
+    margin-top: 40px;
+    bottom: auto;
+}
+
+.testimonials .swiper-pagination-bullet{
+    height: 12px;
+    width: 12px;
+    background-color:hsl(211, 100%, 35%);
 }
