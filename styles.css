@@ -47,7 +47,8 @@ body {
     padding: 2rem 9%;
     box-shadow: var(--box-shadow);
 }
-.header h1{
+
+.header h1 {
     font-size: 25px;
 }
 
@@ -545,23 +546,22 @@ h3 {
 
     .header .navbar {
         background: #fff;
-        color: #130f40;
         position: absolute;
         top: -1000%;
         right: 2rem;
-        width: 30rem;
-        border-radius: 4px;
-        box-shadow: var(--box-shadow);
+        width: 20rem;
+        border-radius: 3px;
+        /* box-shadow: var(--box-shadow); */
     }
 
     .header .navbar a {
-        font-size: 2rem;
-        margin: 2rem 2.5rem;
+        font-size: 1.5rem;
+        margin: 1rem 1.5rem;
         display: block;
     }
 
     #menu-btn {
-        display: inline-block;
+        display: flex;
     }
 
     .btn {
@@ -598,36 +598,4 @@ h3 {
         transition: .4s linear;
     }
 
-}
-
-@media screen and (max-width: 520px) {
-    .screen-body {
-        flex-direction: column;
-    }
-
-    .screen-body-item.left {
-        margin-bottom: 30px;
-    }
-
-    .app-title {
-        flex-direction: row;
-    }
-
-    .app-title span {
-        margin-right: 12px;
-    }
-
-    .app-title:after {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .screen-body {
-        padding: 40px;
-    }
-
-    .screen-body-item {
-        padding: 0;
-    }
 }
