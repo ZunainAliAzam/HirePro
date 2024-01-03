@@ -171,6 +171,76 @@ body {
     background-color: hsl(207, 10%, 21%);
 }
 
+/* CATEGORY CARDS */
+
+.category {
+    background-color: #eee;
+    padding: 20px;
+    margin: 40px;
+}
+
+.category-title h2{
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+
+.category-title p{
+    font-size: 16px;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.category-title a{
+    font-style: none;
+    color: hsl(211, 100%, 35%);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.category-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.category-content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    width: calc(25% - 20px); 
+    box-sizing: border-box; 
+    cursor: pointer;
+}
+.category-content h3{
+    font-size: 20px;
+}
+
+.category-content .card-rating{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.category-content .card-rating i{
+    color:hsl(36, 88%, 60%);
+    font-size: 14px;
+}
+.category-content .card-rating i span{
+    color: hsl(207, 10%, 21%);
+    font-size: 14px;
+    font-weight: 600;
+}
+.category-content .card-rating p{
+    font-size: 14px;
+    margin-top: -3px;
+}
+.category-content:hover{
+    background-color: hsl(211, 75%, 32%);
+    color: white
+}
+
+/* TESTIMONIALS */
 .container {
     background-color: #eee;
     font-family: 'Poppins', sans-serif;
