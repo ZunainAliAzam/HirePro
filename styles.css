@@ -47,11 +47,9 @@ body {
     padding: 2rem 9%;
     box-shadow: var(--box-shadow);
 }
-
-.header h1 {
+.header h1{
     font-size: 25px;
 }
-
 .header .navbar a {
     font-size: 1.5rem;
     margin: 0 1rem;
@@ -377,6 +375,7 @@ h3 {
     text-transform: capitalize;
     color: hsl(207, 10%, 21%);
     font-size: 14px;
+    margin-left: 20px;
 }
 
 .testimonials-item p {
