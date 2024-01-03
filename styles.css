@@ -240,6 +240,64 @@ body {
     color: white
 }
 
+/* HIRING CARDS */
+.hiring{
+    padding:20px;
+    margin:40px;
+}
+
+.hiring-title{
+    font-size: 3.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    text-align: center;
+}
+
+.hiring-cards{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.hiring-content{
+    margin:0 10px;
+    width: calc(30% - 20px); 
+    box-sizing: border-box; 
+}
+.hiring-content p,h3{
+    margin: 15px;
+    text-align: center;
+}
+.hiring-content h3{
+    font-size: 1.7rem;
+    color: hsl(212, 54%, 32%);
+}
+
+.hiring-content p{
+    font-size: 13px;
+    color: hsl(212, 54%, 32%);
+}
+.number-seq{
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.number-seq h1{
+    padding: 1.5rem 2.5rem;
+    background-color: #fff;
+    border: 1px solid hsl(211, 98%, 41%);
+    border-radius: 50%;
+    font-size: 2.5rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: hsl(211, 98%, 41%);
+}
+
+.arrow{
+    font-size: 3rem;
+    color:hsl(212, 54%, 32%)
+}
+
 /* TESTIMONIALS */
 .container {
     background-color: #eee;
