@@ -103,7 +103,7 @@
 
 @media screen and (max-width:450px) {
     .header {
-        max-width: 430px;
+        max-width: 450px;
         margin: 0;
         padding: 2rem 5%; /* Adjust padding for smaller screens */
     }
@@ -147,6 +147,10 @@
 
     .btn {
         width: 100%; /* Make buttons full width */
+    }
+    .hero{
+        max-width: 450px;
+        margin:0
     }
     .category {
         max-width: 450px;
