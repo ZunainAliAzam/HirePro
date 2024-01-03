@@ -94,6 +94,10 @@ body {
     background: whitesmoke;
 }
 
+#menu-btn {
+    display: none;
+}
+
 /* HERO SECTION */
 
 .hero-container {
@@ -102,7 +106,6 @@ body {
     margin: 40px;
     align-items: center;
     box-sizing: border-box;
-    /* box-shadow: var(--box-shadow); */
     padding: 10px 40px;
     border-radius: 10px;
 }
@@ -174,30 +177,34 @@ body {
 /* CATEGORY CARDS */
 
 .category {
-    background-color:none;
+    background-color: none;
     padding: 20px;
     margin: 40px;
 }
 
-.category-title h2{
-    font-size: 3rem;
+.category-title h2 {
+    font-size: 3.5rem;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 800;
+    color: hsl(107, 10%, 21%);
+    text-align: center;
+    text-decoration: overline;
 }
 
-.category-title p{
+.category-title p {
     font-size: 16px;
-    margin: 10px 0;
+    margin: 10px 20px;
     font-style: italic;
 }
 
-.category-title a{
+.category-title a {
     font-style: none;
     color: hsl(211, 100%, 35%);
     text-decoration: underline;
     cursor: pointer;
 }
-.category-card{
+
+.category-card {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -206,100 +213,112 @@ body {
 
 .category-content {
     padding: 20px;
-    background-color: #fff;
+    background-color: hsl(0, 0%, 90%);
     border-radius: 10px;
     margin: 10px;
-    width: calc(25% - 20px); 
-    box-sizing: border-box; 
+    width: calc(25% - 20px);
+    box-sizing: border-box;
     cursor: pointer;
 }
-.category-content h3{
-    font-size: 20px;
+
+.category-content h3 {
+    font-size: 18px;
 }
 
-.category-content .card-rating{
+.category-content .card-rating {
     display: flex;
     justify-content: space-between;
     margin: 15px 0;
 }
-.category-content .card-rating i{
-    color:hsl(36, 88%, 60%);
+
+.category-content .card-rating i {
+    color: hsl(211, 100%, 35%);
     font-size: 14px;
 }
-.category-content .card-rating i span{
+
+.category-content .card-rating i span {
     color: hsl(207, 10%, 21%);
     font-size: 14px;
     font-weight: 600;
 }
-.category-content .card-rating p{
+
+.category-content .card-rating p {
     font-size: 14px;
     margin-top: -3px;
 }
-.category-content:hover{
-    background-color: hsl(211, 75%, 32%);
-    color: white
+
+.category-content:hover {
+    background-color: hsl(0, 0%, 80%);
+    color: hsl(210, 11%, 15%)
 }
 
 /* HIRING CARDS */
-.hiring{
-    padding:20px;
-    margin:40px;
+.hiring {
+    padding: 20px;
+    margin: 40px;
 }
 
-.hiring-title{
+.hiring-title {
     font-size: 3.5rem;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 800;
     text-align: center;
-    color:hsl(207, 10%, 21%)
+    color: hsl(207, 10%, 21%);
+    text-decoration: overline;
 }
 
-.hiring-cards{
+.hiring-cards {
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center
 }
-.hiring-content{
-    margin:0 10px;
-    width: calc(30% - 20px); 
-    box-sizing: border-box; 
+
+.hiring-content {
+    margin: 0 10px;
+    width: calc(30% - 20px);
+    box-sizing: border-box;
 }
-.hiring-content p,h3{
+
+.hiring-content p,
+h3 {
     margin: 15px;
     text-align: center;
 }
-.hiring-content h3{
+
+.hiring-content h3 {
     font-size: 1.7rem;
     color: hsl(212, 54%, 32%);
 }
 
-.hiring-content p{
+.hiring-content p {
     font-size: 13px;
     color: hsl(212, 54%, 32%);
 }
-.number-seq{
+
+.number-seq {
     margin: 40px 0;
     display: flex;
     justify-content: space-evenly;
 }
 
-.number-seq h1{
+.number-seq h1 {
     padding: 1.5rem 2.5rem;
     background-color: #fff;
     border: 1px solid hsl(211, 98%, 41%);
     border-radius: 50%;
     font-size: 2.5rem;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: hsl(211, 98%, 41%);
 }
 
-.arrow{
+.arrow {
     font-size: 3rem;
-    color:hsl(212, 54%, 32%)
+    color: hsl(212, 54%, 32%)
 }
 
 /* TESTIMONIALS */
+
 .container {
     font-family: 'Poppins', sans-serif;
     max-width: 1170px;
@@ -319,6 +338,7 @@ body {
     text-transform: capitalize;
     color: hsl(207, 10%, 21%);
     line-height: 1.2;
+    text-decoration: overline;
 }
 
 .testimonials-item {
@@ -381,8 +401,8 @@ body {
 
 .contact {
     padding: 20px;
-    background-color: #130f40;
-    margin: 40px 85px;
+    background-color: hsl(207, 10%, 21%);
+    margin-top: 40px;
 }
 
 .screen-body {
@@ -459,7 +479,7 @@ body {
 }
 
 .app-form-button {
-    background-color: hsl(207, 10%, 21%);
+    background-color: cadetblue;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -471,13 +491,13 @@ body {
 }
 
 .app-form-button:hover {
-    background-color: cadetblue;
+    background-color: hsl(210, 11%, 15%);
     color: hsl(0, 0%, 100%);
 }
 
 
 .footer {
-    background-color: hsl(207, 10%, 21%);
+    background-color: hsl(212, 54%, 32%);
     max-width: 100%;
     margin-bottom: 0;
     overflow: auto;
@@ -511,10 +531,70 @@ body {
 .feet p {
     margin: 40px 0;
     font-size: 1.5rem;
+    font-weight: 800;
 }
 
 .feet-img {
     margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+
+    .header .navbar {
+        background: #fff;
+        color: #130f40;
+        position: absolute;
+        top: -1000%;
+        right: 2rem;
+        width: 30rem;
+        border-radius: 4px;
+        box-shadow: var(--box-shadow);
+    }
+
+    .header .navbar a {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .btn {
+        background: hsl(210, 11%, 15%);
+        color: white;
+        padding: 5px 10px;
+        align-items: center;
+        border-radius: 5px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .btn.hire {
+        background: hsl(211, 100%, 35%);
+    }
+
+    .btn.dev {
+        background: white;
+        border: 1px solid rgb(0, 0, 0);
+        color: #000;
+    }
+
+    .btn:hover {
+        opacity: 0.8;
+    }
+
+    .btn.dev:hover {
+        background: whitesmoke;
+    }
+
+    .header .navbar.active {
+        top: 110%;
+        transition: .4s linear;
+    }
+
 }
 
 @media screen and (max-width: 520px) {

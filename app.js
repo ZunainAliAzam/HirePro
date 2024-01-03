@@ -13,3 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
   });
+
+let menuBtn = document.querySelector("#menu-btn");
+let menu = document.querySelector(".navbar");
+
+menuBtn.onclick = () => {
+    menu.classList.toggle('active');
+}
