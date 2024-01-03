@@ -150,7 +150,17 @@
     }
     .hero{
         max-width: 450px;
-        margin:0
+        margin:0;
+    }
+    .hero-banner{
+        background: url(./images/hero-banner.jpg) no-repeat;
+        background-color: #fff;
+        background-position: right;
+        padding: 0;
+        border-radius: 20px;
+    }
+    .hero-container {
+        padding:0;
     }
     .category {
         max-width: 450px;
