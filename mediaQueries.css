@@ -1,59 +1,35 @@
 @media screen and (max-width:768px) {
-    .header {
-        padding: 2rem 5%; /* Adjust padding for smaller screens */
-    }
-
-    .header h1 {
-        font-size: 20px; /* Decrease font size for the heading */
-    }
-
     .header .navbar {
-        display: none; /* Hide the navigation links on smaller screens */
-        flex-direction: column; /* Stack links vertically */
+        background: #fff;
+        color: #130f40;
         position: absolute;
-        top: 70px; /* Adjust the top position to avoid overlapping the header */
-        left: 0;
-        right: 0;
-        background-color: #fff;
-        z-index: 999; /* Increase z-index to appear above other content */
-    }
-
-    .header .navbar.active {
-        display: flex; /* Show the navigation links when the menu is active */
+        top: -1000%;
+        right: 2rem;
+        width: 30rem;
+        border-radius: 4px;
     }
 
     .header .navbar a {
-        margin: 10px 0; /* Add spacing between navigation links */
+        font-size: 1rem;
+        margin: 1rem 0.5rem;
+        display: block;
     }
 
     #menu-btn {
-        display: block; /* Show the menu button */
-        font-size: 1.5rem;
-        cursor: pointer;
-    }
-
-    .header .actions {
-        flex-direction: row; /* Stack action buttons vertically */
-        align-items:flex-end; /* Align buttons to the start */
-        margin-top: 5px; /* Add some top margin */
+        display: inline-block;
     }
 
     .btn {
-        padding-left:0;
-    }
-    .btn span{
-        padding: 0 10px;
-        text-align: center;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 1rem;
     }
 
-    .btn .dev{
-        padding: 0;
-        margin-right:20px;
+    .header .navbar.active {
+        top: 110%;
+        transition: .4s linear;
     }
-    .btn .hire span{
-        padding: 0;
-        text-align: center;
-    }
+
     .hero-banner {
         background: none;
     }
@@ -126,9 +102,55 @@
 }
 
 @media screen and (max-width:450px) {
+    .header {
+        max-width: 430px;
+        margin: 0;
+        padding: 2rem 5%; /* Adjust padding for smaller screens */
+    }
+
+    .header h1 {
+        font-size: 20px; /* Decrease font size for the heading */
+    }
+
+    .header .navbar {
+        display: none; /* Hide the navigation links on smaller screens */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute;
+        top: -1000px; /* Adjust the top position to avoid overlapping the header */
+        left: 60%;
+        right: 0;
+        background-color: #fff;
+        z-index: 999; /* Increase z-index to appear above other content */
+    }
+
+    .header .navbar.active {
+        display: flex;
+        top: 110%;
+        transition: 4s linear;
+    }
+
+    .header .navbar a {
+        margin: 2px 0; /* Add spacing between navigation links */
+    }
+
+    #menu-btn {
+        display: block; /* Show the menu button */
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .header .actions {
+        flex-direction: row; /* Stack action buttons vertically */
+        align-items:center; /* Align buttons to the start */
+        margin-top: 10px; /* Add some top margin */
+    }
+
+    .btn {
+        width: 100%; /* Make buttons full width */
+    }
     .category {
         max-width: 450px;
-        margin: 0;
+        margin: -10px 0;
     }
 
     .category-card {
