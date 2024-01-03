@@ -49,6 +49,7 @@ body {
 }
 .header h1{
     font-size: 25px;
+    margin-right: 10px;
 }
 .header .navbar a {
     font-size: 1.5rem;
@@ -58,10 +59,9 @@ body {
 
 .header .actions {
     font-size: 1.5rem;
-    margin: 0 1rem;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .btn {
@@ -70,13 +70,15 @@ body {
     color: white;
     padding: 10px 15px;
     display: flex;
-    place-items: center;
+    /* place-items: center; */
     border-radius: 5px;
     font-family: 'Nunito', sans-serif;
     font-size: 1.35rem;
     font-weight: 600;
     overflow: hidden;
+    text-align: center;
 }
+
 
 .btn.hire {
     background: hsl(211, 100%, 35%);
@@ -133,10 +135,17 @@ body {
     margin: 20px 0;
 }
 
-.hero-banner img {
+.hero-banner{
+    background: url(./images/hero-banner.jpg) no-repeat;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    background-color: #fff;
+    background-position: right;
+    background-size: 100%;
+    position: inherit; 
+    padding-top: 30rem;
+    padding-left: 30rem;
+    padding-right: 30rem;
     border-radius: 20px;
 }
 
@@ -539,62 +548,4 @@ h3 {
 
 .feet-img {
     margin: 20px 0;
-}
-
-@media (max-width: 768px) {
-
-    .header .navbar {
-        background: #fff;
-        position: absolute;
-        top: -1000%;
-        right: 2rem;
-        width: 20rem;
-        border-radius: 3px;
-        /* box-shadow: var(--box-shadow); */
-    }
-
-    .header .navbar a {
-        font-size: 1.5rem;
-        margin: 1rem 1.5rem;
-        display: block;
-    }
-
-    #menu-btn {
-        display: flex;
-    }
-
-    .btn {
-        background: hsl(210, 11%, 15%);
-        color: white;
-        padding: 5px 10px;
-        align-items: center;
-        border-radius: 5px;
-        font-family: 'Nunito', sans-serif;
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    .btn.hire {
-        background: hsl(211, 100%, 35%);
-    }
-
-    .btn.dev {
-        background: white;
-        border: 1px solid rgb(0, 0, 0);
-        color: #000;
-    }
-
-    .btn:hover {
-        opacity: 0.8;
-    }
-
-    .btn.dev:hover {
-        background: whitesmoke;
-    }
-
-    .header .navbar.active {
-        top: 110%;
-        transition: .4s linear;
-    }
-
-}
+}   

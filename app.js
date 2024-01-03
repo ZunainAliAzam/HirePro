@@ -19,4 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
     menuBtn.onclick = () => {
         menu.classList.toggle('active');
     }
+
+    windows.onclick = () => {
+        menu.classList.remove('active');
+    }
 });

@@ -1,0 +1,219 @@
+@media screen and (max-width:768px) {
+    .header {
+        padding: 2rem 5%; /* Adjust padding for smaller screens */
+    }
+
+    .header h1 {
+        font-size: 20px; /* Decrease font size for the heading */
+    }
+
+    .header .navbar {
+        display: none; /* Hide the navigation links on smaller screens */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute;
+        top: 70px; /* Adjust the top position to avoid overlapping the header */
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        z-index: 999; /* Increase z-index to appear above other content */
+    }
+
+    .header .navbar.active {
+        display: flex; /* Show the navigation links when the menu is active */
+    }
+
+    .header .navbar a {
+        margin: 10px 0; /* Add spacing between navigation links */
+    }
+
+    #menu-btn {
+        display: block; /* Show the menu button */
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .header .actions {
+        flex-direction: row; /* Stack action buttons vertically */
+        align-items:flex-end; /* Align buttons to the start */
+        margin-top: 5px; /* Add some top margin */
+    }
+
+    .btn {
+        padding-left:0;
+    }
+    .btn span{
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .btn .dev{
+        padding: 0;
+        margin-right:20px;
+    }
+    .btn .hire span{
+        padding: 0;
+        text-align: center;
+    }
+    .hero-banner {
+        background: none;
+    }
+
+    .hero-content {
+        margin-right: 30px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-btn-one {
+        margin-right: 30px
+    }
+
+    .hero-btn-two {
+        margin-right: 30px;
+    }
+
+    .category {
+        max-width: 768px;
+        margin: -10px 0;
+    }
+
+    .category-card {
+        justify-content: center;
+    }
+
+    .category-content {
+        width: calc(50% - 20px);
+    }
+
+    .hiring {
+        max-width: 768px;
+        margin: 0;
+    }
+
+    .hiring-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hiring-content {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: -20px;
+        text-align: center;
+    }
+
+    .arrow {
+        display: none;
+        /* Hide the arrows on smaller screens */
+    }
+
+    .testimonials {
+        max-width: 768px;
+        margin: 0;
+    }
+
+    .contact {
+        max-width: 768px;
+        margin: 0;
+    }
+
+    .footer {
+        max-width: 768px;
+        margin: 0 -10px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .category {
+        max-width: 450px;
+        margin: 0;
+    }
+
+    .category-card {
+        justify-content: center;
+    }
+
+    .category-content {
+        width: calc(50% - 20px);
+    }
+
+    .hiring {
+        max-width: 450px;
+        margin: 0;
+    }
+
+    .hiring-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hiring-content {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: -20px;
+        text-align: center;
+    }
+
+    .arrow {
+        display: none;
+        /* Hide the arrows on smaller screens */
+    }
+
+    .testimonials {
+        max-width: 450px;
+        margin: 0;
+    }
+
+    .contact{
+        max-width: 450px;
+        margin: 0;
+    }
+    .screen-body {
+        flex-direction: column;
+    }
+
+    .screen-body-item {
+        padding: 20px;
+    }
+
+    .app-title{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .app-title:after {
+        width: 0;
+    }
+
+    .app-form-group.buttons {
+        text-align: center;
+    }
+
+    .app-form-button {
+        margin-right: 0;
+        margin-top: 1rem;
+        /* Add some top margin to separate buttons */
+    }
+
+    .app-form-control,
+    .app-form-button {
+        font-size: 12px;
+    }
+
+
+    .footer {
+        max-width: 450px;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .feet {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feet p {
+        margin-bottom: 0;
+    }
+}
