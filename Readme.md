@@ -6,6 +6,9 @@ This is a design that I created using `HTML`, `CSS`, and `JavaScript`. I used `S
 
 ![Design preview for the HirePro landing page coding challenge](./images/hirePro-design.jpg)
 
+## Demo
+- [Link to Live Demo](https://hirepro.netlify.app/)
+  
 ## Deployment
 
 ### Local Deployment
@@ -44,9 +47,24 @@ If you want to deploy this project live, consider the following steps:
 2. Choose a hosting provider (e.g., [Netlify](https://www.netlify.com/), [Vercel](https://vercel.com/), [GitHub Pages](https://pages.github.com/)).
 3. Follow the hosting provider's documentation for deploying static websites.
 
+## Technologies Used
+### Technologies:
+
+- HTML
+- CSS
+- JavaScript
+
+### Libraries
+- SwiperJS
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ## Author
 
 ### Zunain Ali Azam
 
 - GitHub: [ZunainAliAzam](https://github.com/ZunainAliAzam)
 - LinkedIn: [Zunain Ali Azam](https://www.linkedin.com/in/zunain-azam/)
+
+## Thank you for reading! 🚀
