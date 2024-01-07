@@ -7,7 +7,7 @@ This is a design that I created using `HTML`, `CSS`, and `JavaScript`. I used `S
 ![Design preview for the HirePro landing page coding challenge](./images/hirePro-design.jpg)
 
 ## Demo
-- [Link to Live Demo](https://hirepro.netlify.app/)
+- Live link to website [HirePro](https://hirepro.netlify.app/)
   
 ## Deployment
 
@@ -50,12 +50,12 @@ If you want to deploy this project live, consider the following steps:
 ## Technologies Used
 ### Technologies:
 
-- HTML
-- CSS
-- JavaScript
+- `HTML`
+- `CSS`
+- `JavaScript`
 
 ### Libraries
-- SwiperJS
+- `SwiperJS`
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -67,4 +67,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - GitHub: [ZunainAliAzam](https://github.com/ZunainAliAzam)
 - LinkedIn: [Zunain Ali Azam](https://www.linkedin.com/in/zunain-azam/)
 
-## Thank you for reading! 🚀
+### Thank you for reading! 🚀
